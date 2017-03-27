@@ -8,14 +8,13 @@ const ModalBox = () => (
         <div className='my-modal-content'>
             <div className='my-modal-body'>
                 <div className="img-container">
-                    <img className='greet-image' alt='Hi!' src={helloGif}/>
+                    <img className="greet-image" alt='Hi!' src={helloGif} />
                 </div>
-                <div className="modal-instractions">
+                <div className="modal-instructions">
                     <p>Search emoji</p>
-                    <p>Click on it!</p>
+                    <p>Click to copy</p>
                     <p>Paste it anywhere</p>
                 </div>               
-                
             </div>
         </div>
     </div>

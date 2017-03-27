@@ -40,7 +40,7 @@ class App extends Component {
       if(e.target === modal){
         modal.style.display = "none";
       }
-    }
+    };
   }
 
   splitToRows(arr, len){
@@ -50,7 +50,7 @@ class App extends Component {
 
     while (i < n) {
       chunks.push(arr.slice(i, i += len));
-    };
+    }
 
     return chunks;
   }
@@ -61,7 +61,7 @@ class App extends Component {
     });
   }
 
-  handleCopyEmoji = (e)=>{
+  handleCopyEmoji = (e) => {
     const emojiSymbol = e.target.dataset.clipboard;
     var textArea = document.createElement("textarea");
     textArea.style.position = 'fixed';
@@ -83,7 +83,7 @@ class App extends Component {
       var successful = document.execCommand('copy');
       var msg = successful ? 'successful' : 'unsuccessful';
       console.log('Copying text command was ' + msg);
-    }catch (err){
+    } catch (err) {
       console.log('Oops, unable to copy');
     }
 

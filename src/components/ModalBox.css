@@ -55,7 +55,7 @@
     width: 332px;
 }
 
-.modal-instractions{
+.modal-instructions{
     display: flex;
     flex-direction: column;
     font-size: 1.2em;
