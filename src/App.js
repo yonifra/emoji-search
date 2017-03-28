@@ -6,8 +6,6 @@ import EmojiResult from './components/EmojiResult';
 import emojiList from './emojiList.json';
 import './App.css';
 
-
-
 class App extends Component {
   constructor(props){
     super(props);
@@ -32,7 +30,7 @@ class App extends Component {
     }).slice(0, numberOfResults);
   }
 
-  showModal(){
+  showModal() {
     const modal = document.getElementById('start-modal');
     modal.style.display='block';
 
@@ -57,8 +55,9 @@ class App extends Component {
 
   handleChangeSearch = (e) => {
     this.setState({
-      filteredEmoji: this.filterEmoji(e.target.value,24)
-    });
+      filteredEmoji: this.filterEmoji(e.target.value, 24)
+    }
+    );
   }
 
   handleCopyEmoji = (e) => {
@@ -79,7 +78,7 @@ class App extends Component {
     document.body.appendChild(textArea);
     textArea.select();
 
-    try{
+    try {
       var successful = document.execCommand('copy');
       var msg = successful ? 'successful' : 'unsuccessful';
       console.log('Copying text command was ' + msg);

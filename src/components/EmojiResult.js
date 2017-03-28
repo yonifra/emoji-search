@@ -8,7 +8,7 @@ const EmojiResult = ({onCopy, emojiList}) => (
   <div className="emoji-result">
     {emojiList.map((emoji) => {
       return (        
-        <EmojiRow key={shortid.generate()} onCopy={onCopy} emojiArray={emoji}/>
+        <EmojiRow key={shortid.generate()} onCopy={onCopy} emojiArray={emoji} />
         );
       })
     }
@@ -34,6 +34,5 @@ EmojiRow.propTypes = {
   onCopy: React.PropTypes.func.isRequired,
   emojiArray: React.PropTypes.array.isRequired
 };
-
 
 export default EmojiResult;

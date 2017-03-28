@@ -4,7 +4,8 @@ import './InputField.css';
 const InputField = (props) => {
     return (<input  onChange={props.onTextChange} 
                     className="input-field" 
-                    type="text"/>);
+                    type="text" />
+            );
 };
 
 InputField.propTypes = {

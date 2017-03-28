@@ -3,7 +3,6 @@ import './ModalBox.css';
 import helloGif from '../img/hello.gif';
 
 const ModalBox = () => (
-
     <div id='start-modal' className='my-modal'>
         <div className='my-modal-content'>
             <div className='my-modal-body'>
