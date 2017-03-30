@@ -1,6 +1,6 @@
 .emoji-card{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin: 5px;
     background: #F28EB4;
@@ -8,12 +8,24 @@
     box-shadow: #F9D0E0
 }
 
+.emoji-card :hover{
+    transition: all 0.1s linear;
+    transform: scale(1.5);
+}
+
 .emoji-img{
+    /*animation: emoji-animation infinite 2s cubic-bezier(0.215, 0.610, 0.355, 1);*/
     margin: 8px;
+    padding: 10px;
+}
+
+@keyframes emoji-animation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .emoji-img :hover{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s linear;
     transform: scale(1.2);
 }
 
@@ -23,7 +35,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 200px;
     text-align: center;
 }
 
